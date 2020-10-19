@@ -1,19 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Geuna&#39;s Blog">
-    <title>Markdown 정리 - Geuna&#39;s Blog</title>
-    <meta name="author" content="GEUNA">
-    
-    
-    
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"GEUNA","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"articleBody":"Markdown Syntaxhttps://heropy.blog/2017/09/30/markdown/\n제목(Header)\n# 제목1\n\n\n제목 1\n\n\n## 제목2\n\n\n제목 2\n\n\n### 제목3\n\n\n제목 3\n\n\n#### 제목4\n\n\n제목 4\n\n\n##### 제목5\n\n\n제목 5\n\n\n###### 제목5\n\n\n제목 6\n제목 1 ======\n\n제목 2 ——\n\n\n텍스트 표시\n``\n\n \n\n\n&lt;pre&gt;&lt;/pre&gt;\n\n강조(Emphasis)\nItalic : *(asterisk) or _(underscore)\nBold : ** or __-&gt; 같이 쓰는 경우 **_이탤릭체_와 볼드체를 한번에**\nUnderline : &lt;u&gt;&lt;/u&gt;\nStrikethrough : ~~(tilde)\n\n목록(List)&lt;ol&gt;, &lt;ul&gt; 목록 태그로 변환\n123456789101112131. 순서가 필요한 목록1. 순서가 필요한 목록  - 순서가 필요하지 않은 목록(서브)  - 순서가 필요하지 않은 목록(서브)1. 순서가 필요한 목록  1. 순서가 필요한 목록(서브)  1. 순서가 필요한 목록(서브)1. 순서가 필요한 목록- 순서가 필요하지 않은 목록에 사용 가능한 기호  - 대쉬(hyphen)  * 별표(asterisks)  + 더하기(plus sign)\n\n순서가 필요한 목록\n순서가 필요한 목록\n순서가 필요하지 않은 목록(서브)\n순서가 필요하지 않은 목록(서브)\n\n\n순서가 필요한 목록\n순서가 필요한 목록(서브)\n순서가 필요한 목록(서브)\n\n\n순서가 필요한 목록\n\n\n순서가 필요하지 않은 목록에 사용 가능한 기호\n대쉬(hyphen)\n\n\n별표(asterisks)\n\n\n더하기(plus sign)\n\n\n\n링크(Link)&lt;a&gt; 로 변환\n123456789[GOOGLE](https:&#x2F;&#x2F;google.com)[NAVER](https:&#x2F;&#x2F;naver.com &quot;링크 설명(title)을 작성하세요.&quot;)[상대적 참조](..&#x2F;users&#x2F;login)[Dribbble][Dribbble link][GitHub][1]\n\nGOOGLE\nNAVER\n상대적 참조\n[Dribbble][Dribbble link]\n[GitHub][1]\n문서 안에서 [참조 링크]를 그대로 사용할 수도 있음\n문서 내 일반 URL이나 꺾쇠 괄호(&lt; &gt;, Angle Brackets)안의 URL은 자동으로 링크를 사용합니다.\n\n구글 홈페이지: https://google.com\n네이버 홈페이지: https://naver.com\n\n- [Dribbble link]: https://dribbble.com- [1]: https://github.com- [참조 링크]: https://naver.com &quot;네이버로 이동합니다!&quot;\n이미지(Image)1234567&lt;img&gt;로 변환링크와 비슷하나 앞에 !가 붙음![대체 텍스트(alternative text)를 입력하세요!](http:&#x2F;&#x2F;www.gstatic.com&#x2F;webp&#x2F;gallery&#x2F;5.jpg &quot;링크 설명(title)을 작성하세요.&quot;)![Kayak][logo][logo]: http:&#x2F;&#x2F;www.gstatic.com&#x2F;webp&#x2F;gallery&#x2F;2.jpg &quot;To go kayaking.&quot;\n\n로 변환링크와 비슷하나 앞에 !가 붙음\n\n이미지에 링크마크다운 이미지 코드를 링크 코드로 묶어줌[![Vue](/images/vue.png)](https://kr.vuejs.org/)\n코드(Code) 강조&lt;pre&gt;, &lt;code&gt;로 변환숫자 1번 키 왼쪽에 있는 `(Grave) 입력\n인라인(inline) 코드 강조background혹은 background-image 속성으로 요소에 배경 이미지를 삽입 가능\n블록(block) 코드 강조`를 3번 이상 입력하고 코드 종류도 입력\n1&lt;a href=&quot;https://www.google.co.kr/&quot; target=&quot;_blank&quot;&gt;GOOGLE&lt;/a&gt;\n\n1234.list &gt; li &#123;  position: absolute;  top: 40px;&#125;\n\n1234function func() &#123;  var a = &#x27;AAA&#x27;;  return a;&#125;\n\n12No language indicated, so no syntax highlighting. But let&#39;s throw in a tag.\n\n\n\n표(Table) 태그로 변환 \n헤더 셀을 구분할 때 3개 이상의 -(hyphen/dash) 기호 필요 \n헤더 셀을 구분하면서 :(Colons) 기호로 셀(열/칸) 안에 내용 정렬 가능 \n가장 좌측과 가장 우측에 있는 |(vertical bar) 기호는 생략 가능 \n\n12345678910111213| 값 | 의미 | 기본값 ||---|:---:|---:|| &#96;static&#96; | 유형(기준) 없음 &#x2F; 배치 불가능 | &#96;static&#96; || &#96;relative&#96; | 요소 자신을 기준으로 배치 |  || &#96;absolute&#96; | 위치 상 부모(조상)요소를 기준으로 배치 |  || &#96;fixed&#96; | 브라우저 창을 기준으로 배치 |  |값 | 의미 | 기본값---|:---:|---:&#96;static&#96; | 유형(기준) 없음 &#x2F; 배치 불가능 | &#96;static&#96;&#96;relative&#96; | 요소 **자신**을 기준으로 배치 |&#96;absolute&#96; | 위치 상 **_부모_(조상)요소**를 기준으로 배치 |&#96;fixed&#96; | **브라우저 창**을 기준으로 배치 |\n\n\n\n\n값\n의미\n기본값\n\n\n\nstatic\n유형(기준) 없음 / 배치 불가능\nstatic\n\n\nrelative\n요소 자신을 기준으로 배치\n\n\n\nabsolute\n위치 상 부모(조상)요소를 기준으로 배치\n\n\n\nfixed\n브라우저 창을 기준으로 배치\n\n\n\n\n\n\n값\n의미\n기본값\n\n\n\nstatic\n유형(기준) 없음 / 배치 불가능\nstatic\n\n\nrelative\n요소 자신을 기준으로 배치\n\n\n\nabsolute\n위치 상 부모(조상)요소를 기준으로 배치\n\n\n\nfixed\n브라우저 창을 기준으로 배치\n\n\n\n인용문(BlockQuote)&lt;blockquote&gt; 태그로 변환\n인용문(blockQuote)\n12&gt; 남의 말이나 글에서 직접 또는 간접으로 따온 문장.&gt; _(네이버 국어 사전)_\n\n\n남의 말이나 글에서 직접 또는 간접으로 따온 문장.(네이버 국어 사전)\n\nBREAK!\n12345&gt; 인용문을 작성하세요!&gt;&gt; 중첩된 인용문(nested blockquote)을 만들 수 있습니다.&gt;&gt;&gt; 중중첩된 인용문 1&gt;&gt;&gt; 중중첩된 인용문 2&gt;&gt;&gt; 중중첩된 인용문 3\n\n\n인용문을 작성하세요!\n\n중첩된 인용문(nested blockquote)을 만들 수 있습니다.\n\n중중첩된 인용문 1중중첩된 인용문 2중중첩된 인용문 3\n\n\n\n수평선(Horizontal Rule)각 기호를 3개 이상 입력\n12---(Hyphens)\n\n12***(Asterisks)\n\n12___(Underscores)\n\n줄바꿈(Line Breaks)1234동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세   &lt;!--띄어쓰기 2번--&gt;무궁화 삼천리 화려 강산&lt;br&gt;대한 사람 대한으로 길이 보전하세\n\n동해물과 백두산이 마르고 닳도록하느님이 보우하사 우리나라 만세   무궁화 삼천리 화려 강산대한 사람 대한으로 길이 보전하세\n","dateCreated":"2020-10-19T20:05:43+09:00","dateModified":"2020-10-19T21:40:27+09:00","datePublished":"2020-10-19T20:05:43+09:00","description":"","headline":"Markdown 정리","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://green9930.github.io/2020/10/19/201019-new-post/"},"publisher":{"@type":"Organization","name":"GEUNA","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"url":"http://green9930.github.io/2020/10/19/201019-new-post/","keywords":"html, markdown"}</script>
-    <meta name="description" content="Markdown Syntaxhttps:&#x2F;&#x2F;heropy.blog&#x2F;2017&#x2F;09&#x2F;30&#x2F;markdown&#x2F; 제목(Header) # 제목1   제목 1   ## 제목2   제목 2   ### 제목3   제목 3   #### 제목4   제목 4   ##### 제목5   제목 5   ###### 제목5   제목 6 제목 1 &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;  제목 2 ——   텍스트 표시">
-<meta property="og:type" content="blog">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"green9930.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Markdown Syntaxhttps:&#x2F;&#x2F;heropy.blog&#x2F;2017&#x2F;09&#x2F;30&#x2F;markdown&#x2F; 제목(Header) # 제목1   제목 1   ## 제목2   제목 2   ### 제목3   제목 3   #### 제목4   제목 4   ##### 제목5   제목 5   ###### 제목5   제목 6 제목 1 &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;  제목 2 ——   텍스트 표시">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Markdown 정리">
 <meta property="og:url" content="http://green9930.github.io/2020/10/19/201019-new-post/index.html">
 <meta property="og:site_name" content="Geuna&#39;s Blog">
@@ -22,336 +30,170 @@
 <meta property="og:image" content="http://www.gstatic.com/webp/gallery/5.jpg">
 <meta property="og:image" content="http://www.gstatic.com/webp/gallery/2.jpg">
 <meta property="article:published_time" content="2020-10-19T11:05:43.000Z">
-<meta property="article:modified_time" content="2020-10-19T12:40:27.166Z">
+<meta property="article:modified_time" content="2020-10-19T13:10:39.792Z">
 <meta property="article:author" content="GEUNA">
 <meta property="article:tag" content="html">
 <meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://www.gstatic.com/webp/gallery/5.jpg">
-    
-    
-        
-    
-    
-    
-    
-    
-    <!--STYLES-->
-    
-<link rel="stylesheet" href="/assets/css/all.css">
 
-    
-<link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
+<link rel="canonical" href="http://green9930.github.io/2020/10/19/201019-new-post/">
 
-    
-<link rel="stylesheet" href="/assets/css/thumbs.css">
 
-    
-<link rel="stylesheet" href="/assets/css/tranquilpeak.css">
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
 
-    <!--STYLES END-->
-    
+  <title>Markdown 정리 | Geuna's Blog</title>
+  
 
-    
 
-    
-        
-    
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-    <body>
-        <div id="blog">
-            <!-- Define author's picture -->
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-
-    
-
-<header id="header" data-behavior="4">
-    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-    <div class="header-title">
-        <a
-            class="header-title-link"
-            href="/"
-            aria-label=""
-        >
-            Geuna&#39;s Blog
-        </a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-    
-        
-            <a
-                class="header-right-picture "
-                href="#about"
-                aria-label="Open the link: /#about"
-            >
-        
-        
-        </a>
-    
-</header>
+  </div>
 
-            <!-- Define author's picture -->
+  <div class="site-meta">
 
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Geuna's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
 
-<nav id="sidebar" data-behavior="4">
-    <div class="sidebar-container">
-        
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/"
-                            
-                            rel="noopener"
-                            title="Home"
-                        >
-                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Home</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/all-categories"
-                            
-                            rel="noopener"
-                            title="Categories"
-                        >
-                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Categories</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/all-tags"
-                            
-                            rel="noopener"
-                            title="Tags"
-                        >
-                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Tags</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/all-archives"
-                            
-                            rel="noopener"
-                            title="Archives"
-                        >
-                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Archives</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link open-algolia-search"
-                            href="#search"
-                            
-                            rel="noopener"
-                            title="Search"
-                        >
-                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Search</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="#about"
-                            
-                            rel="noopener"
-                            title="About"
-                        >
-                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">About</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://github.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="GitHub"
-                        >
-                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">GitHub</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="http://stackoverflow.com/users"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Stack Overflow"
-                        >
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://twitter.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Twitter"
-                        >
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://facebook.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Facebook"
-                        >
-                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://plus.google.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Google +"
-                        >
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google +</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://www.linkedin.com/profile/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="LinkedIn"
-                        >
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/mailto"
-                            
-                            rel="noopener"
-                            title="Mail"
-                        >
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/atom.xml"
-                            
-                            rel="noopener"
-                            title="RSS"
-                        >
-                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">RSS</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
 </nav>
 
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
             
-            <div id="main" data-behavior="4"
-                 class="
-                        hasCoverMetaIn
-                        ">
-                
-<article class="post">
+
     
-    
-        <div class="post-header main-content-wrap text-left">
-    
-        <h1 class="post-title">
-            Markdown 정리
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://green9930.github.io/2020/10/19/201019-new-post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="GEUNA">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Geuna's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Markdown 정리
         </h1>
-    
-    
+
         <div class="post-meta">
-    <time datetime="2020-10-19T20:05:43+09:00">
-	
-		    Oct 19, 2020
-    	
-    </time>
-    
-</div>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-10-19 20:05:43 / Modified: 22:10:39" itemprop="dateCreated datePublished" datetime="2020-10-19T20:05:43+09:00">2020-10-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
 
     
-</div>
-
     
-    <div class="post-content markdown">
-        <div class="main-content-wrap">
-            <h1 id="Markdown-Syntax"><a href="#Markdown-Syntax" class="headerlink" title="Markdown Syntax"></a>Markdown Syntax</h1><p><a target="_blank" rel="noopener" href="https://heropy.blog/2017/09/30/markdown/">https://heropy.blog/2017/09/30/markdown/</a></p>
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Markdown-Syntax"><a href="#Markdown-Syntax" class="headerlink" title="Markdown Syntax"></a>Markdown Syntax</h1><p><a target="_blank" rel="noopener" href="https://heropy.blog/2017/09/30/markdown/">https://heropy.blog/2017/09/30/markdown/</a></p>
 <h3 id="제목-Header"><a href="#제목-Header" class="headerlink" title="제목(Header)"></a>제목(Header)</h3><ol>
 <li><code># 제목1</code></li>
 </ol>
@@ -562,327 +404,191 @@
 
 <p>동해물과 백두산이 마르고 닳도록<br>하느님이 보우하사 우리나라 만세   <!--띄어쓰기 2번--><br>무궁화 삼천리 화려 강산<br><br>대한 사람 대한으로 길이 보전하세</p>
 
-            
-
-
-        </div>
     </div>
-    <div id="post-footer" class="post-footer main-content-wrap">
-        
-            <div class="post-footer-tags">
-                <span class="text-color-light text-small">TAGGED IN</span><br/>
-                
-    <a class="tag tag--primary tag--small t-none-link" href="/tags/html/" rel="tag">html</a> <a class="tag tag--primary tag--small t-none-link" href="/tags/markdown/" rel="tag">markdown</a>
-
-            </div>
-        
-        
-            <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a
-                        class="post-action-btn btn btn--disabled"
-                        aria-hidden="true"
-                    >
-                        
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
-                    </a>
-            </li>
-            <li class="post-action">
-                
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/10/19/201018-new-post/"
-                    data-tooltip="201018 REVIEW - How to start git"
-                    aria-label="NEXT: 201018 REVIEW - How to start git"
-                >
-                    
-                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a
-                class="post-action-btn btn btn--default btn-open-shareoptions"
-                href="#btn-open-shareoptions"
-                aria-label="Share this post"
-            >
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </a>
-        </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a
-                    class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://green9930.github.io/2020/10/19/201019-new-post/"
-                    title="Share on Facebook"
-                    aria-label="Share on Facebook"
-                >
-                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a
-                    class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://green9930.github.io/2020/10/19/201019-new-post/"
-                    title="Share on Twitter"
-                    aria-label="Share on Twitter"
-                >
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a
-                    class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://green9930.github.io/2020/10/19/201019-new-post/"
-                    title="Share on Google+"
-                    aria-label="Share on Google+"
-                >
-                    <i class="fab fa-google-plus" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-        
-            
-        
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
-            
-                <i class="fa fa-list" aria-hidden="true"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-
-
-        
-        
-            
-        
-    </div>
-</article>
-
-
-
-                <footer id="footer" class="main-content-wrap">
-    <span class="copyrights">
-        Copyrights &copy; 2020 GEUNA. All Rights Reserved.
-    </span>
-</footer>
-
-            </div>
-            
-                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
-                    <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a
-                        class="post-action-btn btn btn--disabled"
-                        aria-hidden="true"
-                    >
-                        
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
-                    </a>
-            </li>
-            <li class="post-action">
-                
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2020/10/19/201018-new-post/"
-                    data-tooltip="201018 REVIEW - How to start git"
-                    aria-label="NEXT: 201018 REVIEW - How to start git"
-                >
-                    
-                        <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a
-                class="post-action-btn btn btn--default btn-open-shareoptions"
-                href="#btn-open-shareoptions"
-                aria-label="Share this post"
-            >
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </a>
-        </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a
-                    class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://green9930.github.io/2020/10/19/201019-new-post/"
-                    title="Share on Facebook"
-                    aria-label="Share on Facebook"
-                >
-                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a
-                    class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://green9930.github.io/2020/10/19/201019-new-post/"
-                    title="Share on Twitter"
-                    aria-label="Share on Twitter"
-                >
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a
-                    class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=http://green9930.github.io/2020/10/19/201019-new-post/"
-                    title="Share on Google+"
-                    aria-label="Share on Google+"
-                >
-                    <i class="fab fa-google-plus" aria-hidden="true"></i>
-                </a>
-            </li>
-        
-        
-            
-        
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
-            
-                <i class="fa fa-list" aria-hidden="true"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-
-
-                </div>
-                
-    <div id="share-options-bar" class="share-options-bar" data-behavior="4">
-        <i id="btn-close-shareoptions" class="fa fa-times"></i>
-        <ul class="share-options">
-            
-                
-                
-                <li class="share-option">
-                    <a
-                        class="share-option-btn"
-                        target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http://green9930.github.io/2020/10/19/201019-new-post/"
-                        aria-label="Share on Facebook"
-                    >
-                        <i class="fab fa-facebook" aria-hidden="true"></i><span>Share on Facebook</span>
-                    </a>
-                </li>
-            
-                
-                
-                <li class="share-option">
-                    <a
-                        class="share-option-btn"
-                        target="new"
-                        href="https://twitter.com/intent/tweet?text=http://green9930.github.io/2020/10/19/201019-new-post/"
-                        aria-label="Share on Twitter"
-                    >
-                        <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
-                    </a>
-                </li>
-            
-                
-                
-                <li class="share-option">
-                    <a
-                        class="share-option-btn"
-                        target="new"
-                        href="https://plus.google.com/share?url=http://green9930.github.io/2020/10/19/201019-new-post/"
-                        aria-label="Share on Google+"
-                    >
-                        <i class="fab fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
-                    </a>
-                </li>
-            
-        </ul>
-    </div>
-
-
-            
-        </div>
-        
-
-
-<div id="about">
-    <div id="about-card">
-        <div id="about-btn-close">
-            <i class="fa fa-times"></i>
-        </div>
-        
-            <h4 id="about-card-name">GEUNA</h4>
-        
-            <div id="about-card-bio"><p>author.bio</p>
-</div>
-        
-        
-            <div id="about-card-job">
-                <i class="fa fa-briefcase"></i>
-                <br/>
-                <p>author.job</p>
-
-            </div>
-        
-        
-    </div>
-</div>
-
-        
-        
-<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
-        <!--SCRIPTS-->
-
-<script src="/assets/js/jquery.js"></script>
-
-
-<script src="/assets/js/jquery.fancybox.js"></script>
-
-
-<script src="/assets/js/thumbs.js"></script>
-
-
-<script src="/assets/js/tranquilpeak.js"></script>
-
-<!--SCRIPTS END-->
-
 
     
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/html/" rel="tag"># html</a>
+              <a href="/tags/markdown/" rel="tag"># markdown</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/19/201018-new-post/" rel="prev" title="201018 REVIEW - How to start git">
+      <i class="fa fa-chevron-left"></i> 201018 REVIEW - How to start git
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown-Syntax"><span class="nav-number">1.</span> <span class="nav-text">Markdown Syntax</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%A0%9C%EB%AA%A9-Header"><span class="nav-number">1.0.1.</span> <span class="nav-text">제목(Header)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EC%A0%9C%EB%AA%A9-1"><span class="nav-number">2.</span> <span class="nav-text">제목 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%A0%9C%EB%AA%A9-2"><span class="nav-number">2.1.</span> <span class="nav-text">제목 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%A0%9C%EB%AA%A9-3"><span class="nav-number">2.1.1.</span> <span class="nav-text">제목 3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%EC%A0%9C%EB%AA%A9-4"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">제목 4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%EC%A0%9C%EB%AA%A9-5"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">제목 5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%EC%A0%9C%EB%AA%A9-6"><span class="nav-number">2.1.1.1.1.1.</span> <span class="nav-text">제목 6</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%ED%85%8D%EC%8A%A4%ED%8A%B8-%ED%91%9C%EC%8B%9C"><span class="nav-number">2.1.2.</span> <span class="nav-text">텍스트 표시</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EA%B0%95%EC%A1%B0-Emphasis"><span class="nav-number">2.1.3.</span> <span class="nav-text">강조(Emphasis)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EB%AA%A9%EB%A1%9D-List"><span class="nav-number">2.1.4.</span> <span class="nav-text">목록(List)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EB%A7%81%ED%81%AC-Link"><span class="nav-number">2.1.5.</span> <span class="nav-text">링크(Link)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%9D%B4%EB%AF%B8%EC%A7%80-Image"><span class="nav-number">2.1.6.</span> <span class="nav-text">이미지(Image)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%97%90-%EB%A7%81%ED%81%AC"><span class="nav-number">2.1.7.</span> <span class="nav-text">이미지에 링크</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%BD%94%EB%93%9C-Code-%EA%B0%95%EC%A1%B0"><span class="nav-number">2.1.8.</span> <span class="nav-text">코드(Code) 강조</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%ED%91%9C-Table"><span class="nav-number">2.1.9.</span> <span class="nav-text">표(Table)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%9D%B8%EC%9A%A9%EB%AC%B8-BlockQuote"><span class="nav-number">2.1.10.</span> <span class="nav-text">인용문(BlockQuote)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%88%98%ED%8F%89%EC%84%A0-Horizontal-Rule"><span class="nav-number">2.1.11.</span> <span class="nav-text">수평선(Horizontal Rule)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EC%A4%84%EB%B0%94%EA%BF%88-Line-Breaks"><span class="nav-number">2.1.12.</span> <span class="nav-text">줄바꿈(Line Breaks)</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">GEUNA</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">GEUNA</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
 
 
 
 
-    </body>
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>
