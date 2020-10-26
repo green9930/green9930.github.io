@@ -24,20 +24,22 @@
     var CONFIG = {"hostname":"green9930.github.io","root":"/","scheme":"Muse","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="What is Label?label 요소란 입력 양식(form) 내부의 입력 요소(input)에 이름을 지정해주는 태그.label과 input 사이를 연결해주는 방식은 크게 명시적 연결과 암시적 연결로 나뉜다.  웹접근성 측면에서의 label화면리더기(screenreader)가 form 내부에서 label을 읽어 보조기술(assistive technolog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://green9930.github.io/2020/10/16/hello-world/index.html">
+<meta property="og:title" content="label의 명시적 연결, 암묵적 연결">
+<meta property="og:url" content="http://green9930.github.io/2020/10/26/201026-new-post/index.html">
 <meta property="og:site_name" content="This is NOTE">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="What is Label?label 요소란 입력 양식(form) 내부의 입력 요소(input)에 이름을 지정해주는 태그.label과 input 사이를 연결해주는 방식은 크게 명시적 연결과 암시적 연결로 나뉜다.  웹접근성 측면에서의 label화면리더기(screenreader)가 form 내부에서 label을 읽어 보조기술(assistive technolog">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-16T07:23:55.518Z">
-<meta property="article:modified_time" content="2020-10-16T07:23:55.518Z">
+<meta property="article:published_time" content="2020-10-26T01:42:49.000Z">
+<meta property="article:modified_time" content="2020-10-26T04:14:03.377Z">
 <meta property="article:author" content="GEUNA">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="label">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://green9930.github.io/2020/10/16/hello-world/">
+<link rel="canonical" href="http://green9930.github.io/2020/10/26/201026-new-post/">
 
 
 <script class="page-configurations">
@@ -50,7 +52,7 @@
   };
 </script>
 
-  <title>Hello World | This is NOTE</title>
+  <title>label의 명시적 연결, 암묵적 연결 | This is NOTE</title>
   
 
 
@@ -151,7 +153,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-Label"><span class="nav-number">1.</span> <span class="nav-text">What is Label?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#label-%ED%83%9C%EA%B7%B8%EC%9D%98-%EB%AA%85%EC%8B%9C%EC%A0%81-explicit-%EC%97%B0%EA%B2%B0"><span class="nav-number">2.</span> <span class="nav-text">label 태그의 명시적(explicit) 연결</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#label-%ED%83%9C%EA%B7%B8%EC%9D%98-%EC%95%94%EC%8B%9C%EC%A0%81-implicit-%EC%97%B0%EA%B2%B0"><span class="nav-number">3.</span> <span class="nav-text">label 태그의 암시적(implicit) 연결</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%EC%B0%B8%EC%A1%B0"><span class="nav-number">3.1.</span> <span class="nav-text">참조</span></a></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -213,7 +215,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://green9930.github.io/2020/10/16/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://green9930.github.io/2020/10/26/201026-new-post/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -226,7 +228,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          label의 명시적 연결, 암묵적 연결
         </h1>
 
         <div class="post-meta-container">
@@ -236,8 +238,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2020-10-16 16:23:55" itemprop="dateCreated datePublished" datetime="2020-10-16T16:23:55+09:00">2020-10-16</time>
+      <time title="Created: 2020-10-26 10:42:49 / Modified: 13:14:03" itemprop="dateCreated datePublished" datetime="2020-10-26T10:42:49+09:00">2020-10-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/HTML-CSS/" itemprop="url" rel="index"><span itemprop="name">HTML/CSS</span></a>
+        </span>
     </span>
 
   
@@ -250,19 +262,35 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h3 id="What-is-Label"><a href="#What-is-Label" class="headerlink" title="What is Label?"></a>What is Label?</h3><p><code>label</code> 요소란 입력 양식(form) 내부의 입력 요소(input)에 이름을 지정해주는 태그.<br><code>label</code>과 <code>input</code> 사이를 연결해주는 방식은 크게 명시적 연결과 암시적 연결로 나뉜다.<br><br></p>
+<ul>
+<li><p><strong>웹접근성 측면에서의 label</strong><br>화면리더기(screenreader)가 form 내부에서 <code>label</code>을 읽어 보조기술(assistive technology) 사용자가 입력해야 하는 텍스트가 무엇인지 잘 파악할 수 있게 도와준다.</p>
+</li>
+<li><p><strong>hit area의 이점</strong><br>관련 <code>label</code>을 클릭해서 <code>input</code>을 활성화시킬 수 있으며 보다 넓어진 활성화 가능 면적은 사용자들의 편의성을 증가시킨다.<br>(EX. <code>radio</code>나 <code>checkbox</code>처럼 입력 면적이 적은 곳에서 유용하게 쓸 수 있다.)</p>
+</li>
+<li><p><strong>label 요소의 주의사항</strong><br><code>label</code> 내부에 <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>와 같은 인터랙티브 컨텐츠 배치를 피한다. 이 경우 <code>label</code> 요소가 들어간 <code>form</code> 형식을 활성화하기 어렵기 때문. </p>
+</li>
+</ul>
+<br>
+<br>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="label-태그의-명시적-explicit-연결"><a href="#label-태그의-명시적-explicit-연결" class="headerlink" title="label 태그의 명시적(explicit) 연결"></a>label 태그의 명시적(explicit) 연결</h3><p><code>&lt;label&gt;</code> 태그의 <code>for</code> 속성과 <code>&lt;input&gt;</code> 태그의 <code>id</code> 속성을 동일하게 입력하여 명시적으로 연결시켜주는 방법<br>명시적 연결은 label과 input 사이에 다른 html 요소가 포함될 경우 많이 사용된다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">id</span>=<span class="string">&quot;user-agreement&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;user-agreement&quot;</span>&gt;</span>동의하십니까?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<input type="checkbox" id="user-agreement" />
+<label for="user-agreement">동의하십니까?</label>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<br>
+<br>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<hr>
+<h3 id="label-태그의-암시적-implicit-연결"><a href="#label-태그의-암시적-implicit-연결" class="headerlink" title="label 태그의 암시적(implicit) 연결"></a>label 태그의 암시적(implicit) 연결</h3><p><code>&lt;input&gt;</code> 태그를 <code>&lt;label&gt;</code> 태그로 감싸서 <code>for</code>, <code>id</code> 속성은 필요없이 암시적으로 연결시켜주는 방법</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> /&gt;</span>동의하십니까?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><label><input type="checkbox" />동의하십니까?</label><br><br><br><br></p>
+<hr>
+<h4 id="참조"><a href="#참조" class="headerlink" title="참조"></a>참조</h4><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/label">https://developer.mozilla.org/ko/docs/Web/HTML/Element/label</a><br><a target="_blank" rel="noopener" href="https://hyeonseok.com/docs/markup-label/">https://hyeonseok.com/docs/markup-label/</a></p>
 
     </div>
 
@@ -271,16 +299,20 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/html/" rel="tag"># html</a>
+              <a href="/tags/label/" rel="tag"># label</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2020/10/25/201025-new-post/" rel="prev" title="Casing Naming Convention 정리">
+                  <i class="fa fa-chevron-left"></i> Casing Naming Convention 정리
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/10/16/201016-new-post/" rel="next" title="My First github Pages">
-                  My First github Pages <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

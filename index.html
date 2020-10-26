@@ -159,7 +159,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -168,7 +168,7 @@
         <span class="site-state-item-name">categories</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -199,6 +199,109 @@
       
 
       
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://green9930.github.io/2020/10/26/201026-new-post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="GEUNA">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is NOTE">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/26/201026-new-post/" class="post-title-link" itemprop="url">label의 명시적 연결, 암묵적 연결</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2020-10-26 10:42:49 / Modified: 13:14:03" itemprop="dateCreated datePublished" datetime="2020-10-26T10:42:49+09:00">2020-10-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/HTML-CSS/" itemprop="url" rel="index"><span itemprop="name">HTML/CSS</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="What-is-Label"><a href="#What-is-Label" class="headerlink" title="What is Label?"></a>What is Label?</h3><p><code>label</code> 요소란 입력 양식(form) 내부의 입력 요소(input)에 이름을 지정해주는 태그.<br><code>label</code>과 <code>input</code> 사이를 연결해주는 방식은 크게 명시적 연결과 암시적 연결로 나뉜다.<br><br></p>
+<ul>
+<li><p><strong>웹접근성 측면에서의 label</strong><br>화면리더기(screenreader)가 form 내부에서 <code>label</code>을 읽어 보조기술(assistive technology) 사용자가 입력해야 하는 텍스트가 무엇인지 잘 파악할 수 있게 도와준다.</p>
+</li>
+<li><p><strong>hit area의 이점</strong><br>관련 <code>label</code>을 클릭해서 <code>input</code>을 활성화시킬 수 있으며 보다 넓어진 활성화 가능 면적은 사용자들의 편의성을 증가시킨다.<br>(EX. <code>radio</code>나 <code>checkbox</code>처럼 입력 면적이 적은 곳에서 유용하게 쓸 수 있다.)</p>
+</li>
+<li><p><strong>label 요소의 주의사항</strong><br><code>label</code> 내부에 <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>와 같은 인터랙티브 컨텐츠 배치를 피한다. 이 경우 <code>label</code> 요소가 들어간 <code>form</code> 형식을 활성화하기 어렵기 때문. </p>
+</li>
+</ul>
+<br>
+<br>
+
+<hr>
+<h3 id="label-태그의-명시적-explicit-연결"><a href="#label-태그의-명시적-explicit-연결" class="headerlink" title="label 태그의 명시적(explicit) 연결"></a>label 태그의 명시적(explicit) 연결</h3><p><code>&lt;label&gt;</code> 태그의 <code>for</code> 속성과 <code>&lt;input&gt;</code> 태그의 <code>id</code> 속성을 동일하게 입력하여 명시적으로 연결시켜주는 방법<br>명시적 연결은 label과 input 사이에 다른 html 요소가 포함될 경우 많이 사용된다.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">id</span>=<span class="string">&quot;user-agreement&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;user-agreement&quot;</span>&gt;</span>동의하십니까?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<input type="checkbox" id="user-agreement" />
+<label for="user-agreement">동의하십니까?</label>
+
+<br>
+<br>
+
+<hr>
+<h3 id="label-태그의-암시적-implicit-연결"><a href="#label-태그의-암시적-implicit-연결" class="headerlink" title="label 태그의 암시적(implicit) 연결"></a>label 태그의 암시적(implicit) 연결</h3><p><code>&lt;input&gt;</code> 태그를 <code>&lt;label&gt;</code> 태그로 감싸서 <code>for</code>, <code>id</code> 속성은 필요없이 암시적으로 연결시켜주는 방법</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> /&gt;</span>동의하십니까?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><label><input type="checkbox" />동의하십니까?</label><br><br><br><br></p>
+<hr>
+<h4 id="참조"><a href="#참조" class="headerlink" title="참조"></a>참조</h4><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/label">https://developer.mozilla.org/ko/docs/Web/HTML/Element/label</a><br><a target="_blank" rel="noopener" href="https://hyeonseok.com/docs/markup-label/">https://hyeonseok.com/docs/markup-label/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
     
 
 
@@ -239,7 +342,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-10-26 00:17:05" itemprop="dateModified" datetime="2020-10-26T00:17:05+09:00">2020-10-26</time>
+        <time title="Modified: 2020-10-26 10:23:49" itemprop="dateModified" datetime="2020-10-26T10:23:49+09:00">2020-10-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -262,7 +365,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <h3 id="What-is-Case-Naming-Convention"><a href="#What-is-Case-Naming-Convention" class="headerlink" title="What is Case Naming Convention?"></a>What is Case Naming Convention?</h3><p>프로그래밍 중 class name을 지정할 때 사용하는 식별자 작성 방식</p>
-<p>잘 작성된 이름은 타인뿐만 아니라 나 역시 소스 코드를 읽고 이해하는데 불필요한 수고를 덜 수 있게 해준다.<br>class name만 보고 어디에 쓰이는지 알 수 있게 효율적으로 정해준다면 전체적으로 생산성의 증가를 가져온다.<br><br></p>
+<p>잘 작성된 이름은 타인뿐만 아니라 나 역시 소스 코드를 읽고 이해하는데 불필요한 수고를 덜 수 있게 해준다.<br>따라서 class name만 보고 용도를 파악하도록 효율적으로 정해준다면 전체적으로 생산성의 증가를 가져올 수 있다.<br><br></p>
 <hr>
 <p>Case Naming Convention의 종류</p>
 <ol>
@@ -289,7 +392,7 @@
 <br>
 <br>
 </li>
-<li><p>Kebab Case (kebab-case)<br>단어와 단어 사이에 ‘-‘(hyphen)을 붙이는 네이밍 컨벤션으로 단어는 모두 소문자로 표기한다. 케밥을 꼬챙이에 꽂은 모양과 비슷하여 유래된 이름이다. </p>
+<li><p>Kebab Case (kebab-case)<br>단어와 단어 사이에 ‘-‘ (hyphen)을 붙이는 네이밍 컨벤션으로 단어는 모두 소문자로 표기한다. 케밥을 꼬챙이에 꽂은 모양과 비슷하여 유래된 이름이다. </p>
 <br>
 <br>
 </li>
@@ -769,7 +872,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-10-25 09:41:42" itemprop="dateModified" datetime="2020-10-25T09:41:42+09:00">2020-10-25</time>
+        <time title="Modified: 2020-10-26 11:42:49" itemprop="dateModified" datetime="2020-10-26T11:42:49+09:00">2020-10-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -791,101 +894,73 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="How-to-start-git"><a href="#How-to-start-git" class="headerlink" title="[How to start git]"></a>[How to start git]</h1><p><a target="_blank" rel="noopener" href="https://ulgoon.github.io/2019/09/09/01-git-first/">https://ulgoon.github.io/2019/09/09/01-git-first/</a> </p>
-<p><strong>1. git init</strong><br>(1)    프로젝트 폴더 만들기<br>    -    $ mkdir sample<br>    -    $ cd sample<br>(2)    git init 명령으로 local repository 역할 시작<br>    -    $ git init  (= 이제부터 git을 쓰겠다)<br>(3)    github에서 새로운 remote repository를 생성한 뒤, 복사한 주소를 local repository에 등록<br>    -    remote repository 이름은 local repository 이름과 맞춰서 헷갈리지 않도록 함<br><a target="_blank" rel="noopener" href="https://github.com/green9930/sample.git">https://github.com/green9930/sample.git</a><br>    -    주소를 복사해 현재 작업공간에 remote repository 주소를 추가<br>        $ git remote add origin <a target="_blank" rel="noopener" href="https://github.com/green9930/sample.git">https://github.com/green9930/sample.git</a></p>
-<p>**origin 은 복사한 주소를 부르기 위한 이름이며, 다른 이름을 써도 무방<br>    -    주소가 잘 추가되었는지 확인<br>        $ git remote get-url origin</p>
-<p>(4)    새 파일을 만들고 작업을 수행<br>    -    $ touch README.md<br>    -    $ vi README.md<br>            i(insert mode) 텍스트 편집<br>            esc(normal mode)<br>            :wq : 저장한 뒤 종료<br>(5)    작업이 끝났으면 $ git status 명령으로 현재 프로젝트의 상태 확인<br>    -&gt; untracked files: README.md 가 보인다면 다음 작업 준비가 끝났다는 의미<br>(6)    workspace에 추가된 새 파일을 index로 staging<br>    -    $ git add README.md<br>(7)    추가된 README.md에 대한 설명을 commit<br>    -    $ git commit<br>            vim 에디터로 commit message 작성<br>            $ git commit -m “ commit message “</p>
-<pre><code>    **_commit message 깔끔하게 입력하기_**
-        open source의 경우 모든 사용자가 읽을 수 있는 언어 선택
-        commit message의 제목에 말머리를 달아 commit의 카테고리를 바로 확인할 수 있게 함
-        feat:, docs:, test:, refactor: 등
-        Referance: Conventional commits
-        commit message의 제목은 구의 형태를 띄게 함
-        commit message는 제목과 내용이 존재
-        내용은 optional body에 Enter로 구분하여 작성하며, 문장형으로 작성</code></pre>
-<p>(8)     commit이 끝났으면 remote repository로 push<br>    -    첫 commit이면 -u(-set-upstream) flag를 붙여 push하여 현재 작업중인 branch가 업로드할 branch의 변동사항을 추적하도록 설정<br>        $ git push -u origin master<br>    -    이후에는 -u 옵션 없이 바로 push<br>        $ git push origin master</p>
-<p><strong>2. git clone</strong>  / github에서 remote repository를 생성한 뒤, 작업공간으로 끌어와 작업 시작<br>(1)    github에서 remote repository를 생성하되, LICENSE, README.md, .gitignore 등의 파일과 함께 생성하고 해당 repository 주소 복사<br>(2)    git bash에서 $ git clone을 복사한 주소를 입력해 작업 공간에 local repository 생성<br>(3)    새 파일을 만들고 작업 수행<br>    -    touch README.md<br>    -    vi README.md<br>(4)    작업이 끝나면 $ git status 명령으로 현재 프로젝트의 상태 확인<br>    -    untracked files: README.md -&gt; 다음 작업을 준비가 된 상태<br>(5)    workspace에 추가된 새로운 파일을 index로 staging<br>    -    $ git add README.md<br>(6)    추가된 README.md에 대한 설명을 commit<br>    -    $ git commit’<br>(7)    commit이 끝났다면 remote repository로 push</p>
+          <h3 id="How-to-start-git"><a href="#How-to-start-git" class="headerlink" title="[How to start git]"></a>[How to start git]</h3><p><a target="_blank" rel="noopener" href="https://ulgoon.github.io/2019/09/09/01-git-first/">https://ulgoon.github.io/2019/09/09/01-git-first/</a> </p>
+<h4 id="1-git-init"><a href="#1-git-init" class="headerlink" title="1. git init"></a>1. git init</h4><p>(1)    프로젝트 폴더 만들기</p>
+<ul>
+<li><code>$ mkdir sample</code></li>
+<li><code>$ cd sample</code><br>
 
-      
-    </div>
+</li>
+</ul>
+<p>(2)    git init 명령으로 local repository 역할 시작</p>
+<ul>
+<li><code>$ git init</code>  (= 이제부터 git을 쓰겠다)<br>
 
-    
-    
-    
+</li>
+</ul>
+<p>(3)    github에서 새로운 remote repository를 생성한 뒤, 복사한 주소를 local repository에 등록</p>
+<ul>
+<li>remote repository 이름은 local repository 이름과 맞춰서 헷갈리지 않도록 한다.</li>
+<li><code>https://github.com/example/sample.git</code> 주소를 복사해 현재 작업공간에 remote repository 주소를 추가<br><code>$ git remote add origin https://github.com/example/sample.git</code></li>
+</ul>
+<p>**origin 은 복사한 주소를 부르기 위한 이름이며, 다른 이름을 써도 무방</p>
+<ul>
+<li>주소가 잘 추가되었는지 확인<br><code>$ git remote get-url origin</code><br>
 
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+</li>
+</ul>
+<p>(4)    새 파일을 만들고 작업을 수행</p>
+<ul>
+<li><code>$ touch README.md</code></li>
+<li><code>$ vi README.md</code>        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">i(insert mode) 텍스트 편집</span><br><span class="line">esc(normal mode)</span><br><span class="line">:wq : 저장한 뒤 종료</span><br></pre></td></tr></table></figure>
+<br>
 
+</li>
+</ul>
+<p>(5)    작업이 끝났으면 <code>$ git status</code> 명령으로 현재 프로젝트의 상태 확인<br>-&gt; <code>untracked files: README.md</code> 가 보인다면 다음 작업 준비가 끝났다는 의미<br><br></p>
+<p>(6)    workspace에 추가된 새 파일을 index로 staging</p>
+<ul>
+<li><code>$ git add README.md</code><br>
 
+</li>
+</ul>
+<p>(7)    추가된 README.md에 대한 설명을 commit<br>    <code>$ git commit</code></p>
+<ul>
+<li>vim 에디터로 commit message 작성</li>
+<li><code>$ git commit -m &quot;commit message&quot;</code></li>
+</ul>
+<p><strong><em>commit message 깔끔하게 입력하기</em></strong></p>
+<ul>
+<li>open source의 경우 모든 사용자가 읽을 수 있는 언어 선택</li>
+<li>commit message의 제목에 말머리를 달아 commit의 카테고리를 바로 확인할 수 있게 함</li>
+<li>feat:, docs:, test:, refactor: 등</li>
+<li>Referance: Conventional commits</li>
+<li>commit message의 제목은 구의 형태를 띄게 함</li>
+<li>commit message는 제목과 내용이 존재</li>
+<li>내용은 optional body에 Enter로 구분하여 작성하며, 문장형으로 작성<br>
 
+</li>
+</ul>
+<p>(8)     commit이 끝났으면 remote repository로 push</p>
+<ul>
+<li>첫 commit이면 -u(-set-upstream) flag를 붙여 push하여 현재 작업중인 branch가 업로드할 branch의 변동사항을 추적하도록 설정<br><code>$ git push -u origin master</code></li>
+<li>이후에는 -u 옵션 없이 바로 push<br><code>$ git push origin master</code><br>
+<br>
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://green9930.github.io/2020/10/16/201016-new-post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="GEUNA">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is NOTE">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/16/201016-new-post/" class="post-title-link" itemprop="url">My First github Pages</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-10-16 16:31:15" itemprop="dateCreated datePublished" datetime="2020-10-16T16:31:15+09:00">2020-10-16</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-10-25 09:41:17" itemprop="dateModified" datetime="2020-10-25T09:41:17+09:00">2020-10-25</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/etc/" itemprop="url" rel="index"><span itemprop="name">etc.</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Hello World!<br>This is my first post.</p>
+</li>
+</ul>
+<hr>
+<h4 id="2-git-clone"><a href="#2-git-clone" class="headerlink" title="2. git clone"></a>2. git clone</h4><p>github에서 remote repository를 생성한 뒤, 작업공간으로 끌어와 작업 시작<br>(1)    github에서 remote repository를 생성하되, <code>LICENSE</code>, <code>README.md</code>, <code>.gitignore</code> 등의 파일과 함께 생성하고 해당 repository 주소 복사<br>(2)    git bash에서 <code>$ git clone</code>을 복사한 주소를 입력해 작업 공간에 local repository 생성<br>(3)    새 파일을 만들고 작업 수행<br>    -    <code>touch README.md</code><br>    -    <code>vi README.md</code><br>(4)    작업이 끝나면 <code>$ git status</code> 명령으로 현재 프로젝트의 상태 확인<br>    -    <code>untracked files: README.md</code> -&gt; 다음 작업을 준비가 된 상태<br>(5)    workspace에 추가된 새로운 파일을 index로 staging<br>    -    <code>$ git add README.md</code><br>(6)    추가된 README.md에 대한 설명을 commit<br>    -    <code>$ git commit’</code><br>(7)    commit이 끝났다면 remote repository로 push</p>
 
       
     </div>
