@@ -233,7 +233,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2020-10-26 10:42:49 / Modified: 13:14:03" itemprop="dateCreated datePublished" datetime="2020-10-26T10:42:49+09:00">2020-10-26</time>
+      <time title="Created: 2020-10-26 10:42:49 / Modified: 15:56:24" itemprop="dateCreated datePublished" datetime="2020-10-26T10:42:49+09:00">2020-10-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -261,14 +261,14 @@
 </li>
 <li><p><strong>hit area의 이점</strong><br>관련 <code>label</code>을 클릭해서 <code>input</code>을 활성화시킬 수 있으며 보다 넓어진 활성화 가능 면적은 사용자들의 편의성을 증가시킨다.<br>(EX. <code>radio</code>나 <code>checkbox</code>처럼 입력 면적이 적은 곳에서 유용하게 쓸 수 있다.)</p>
 </li>
-<li><p><strong>label 요소의 주의사항</strong><br><code>label</code> 내부에 <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>와 같은 인터랙티브 컨텐츠 배치를 피한다. 이 경우 <code>label</code> 요소가 들어간 <code>form</code> 형식을 활성화하기 어렵기 때문. </p>
+<li><p><strong>label 요소의 주의사항</strong><br><code>label</code> 내부에 <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>와 같은 인터랙티브 컨텐츠 배치를 피한다. 이 경우 <code>label</code> 요소가 들어간 <code>form</code> 형식을 활성화하기 어렵기 때문.</p>
 </li>
 </ul>
 <br>
 <br>
 
 <hr>
-<h3 id="label-태그의-명시적-explicit-연결"><a href="#label-태그의-명시적-explicit-연결" class="headerlink" title="label 태그의 명시적(explicit) 연결"></a>label 태그의 명시적(explicit) 연결</h3><p><code>&lt;label&gt;</code> 태그의 <code>for</code> 속성과 <code>&lt;input&gt;</code> 태그의 <code>id</code> 속성을 동일하게 입력하여 명시적으로 연결시켜주는 방법<br>명시적 연결은 label과 input 사이에 다른 html 요소가 포함될 경우 많이 사용된다.</p>
+<h3 id="label-태그의-명시적-explicit-연결"><a href="#label-태그의-명시적-explicit-연결" class="headerlink" title="label 태그의 명시적(explicit) 연결"></a>label 태그의 명시적(explicit) 연결</h3><p><code>&lt;label&gt;</code> 태그의 <code>for</code> 속성과 <code>&lt;input&gt;</code> 태그의 <code>id</code> 속성을 동일하게 입력하여 명시적으로 연결시켜주는 방법<br>명시적 연결은 label과 input 사이에 다른 html 요소가 포함될 경우 많이 사용된다.<br>디자인상 편의성을 위해 명시적 연결을 권장한다.</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">id</span>=<span class="string">&quot;user-agreement&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;user-agreement&quot;</span>&gt;</span>동의하십니까?<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <input type="checkbox" id="user-agreement" />
